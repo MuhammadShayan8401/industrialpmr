@@ -42,7 +42,7 @@ export const featureGroups = [
     ],
   },
   {
-    title: "Reports and cost",
+    title: "Reports",
     icon: (
       <>
         <g fill="currentColor" stroke="none" opacity=".2" transform="translate(3 3)"><path d="M6 2h12l6 6v20H6z"/></g><path d="M6 2h12l6 6v20H6zM18 2v6h6M10 16h10M10 21h10"/>
