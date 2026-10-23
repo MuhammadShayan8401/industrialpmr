@@ -12,7 +12,7 @@ export default function Hero({ openCall }) {
           </button>
         </div>
         <figure className="hero__shot">
-          <img src="/assets/laptop.png" alt="The industrialpmr dashboard on a laptop, showing factory status, production, electricity and material used, and live unit status." width="1200" height="683" fetchPriority="high" />
+          <img src="/assets/laptop.svg" alt="The industrialpmr dashboard on a laptop, showing factory status, production, electricity and material used, and live unit status." width="1200" height="683" fetchPriority="high" />
         </figure>
       </div>
     </section>
