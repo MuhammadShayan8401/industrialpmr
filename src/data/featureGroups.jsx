@@ -1,4 +1,3 @@
-
 /* Content for the Features section. Edit text here; icons are the inline SVG shapes. */
 
 export const featureGroups = [
