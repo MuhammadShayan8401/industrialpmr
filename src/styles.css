@@ -13,7 +13,7 @@
   --ink-2: #1A2833;
   --accent: #DC8034;
   --accent-deep: #A4501A;
-  --steel: #F3EFE8; /* changed: warm off-white for Features */
+  --steel: #F3EFE8; 
   --paper: #F6F8F9;
   --white: #fff;
   --muted: #4A5761;
@@ -164,7 +164,6 @@ p {
   border-color: var(--ink);
 }
 
-/* changed: Dashboard button is orange on the dark header */
 .header__actions .btn--ink {
   background: var(--ink);
   color: var(--white);
