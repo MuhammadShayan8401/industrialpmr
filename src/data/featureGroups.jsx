@@ -1,3 +1,4 @@
+
 /* Content for the Features section. Edit text here; icons are the inline SVG shapes. */
 
 export const featureGroups = [
@@ -52,6 +53,36 @@ export const featureGroups = [
       { title: "Detailed reports", text: "Get detailed reports for each machine's production, power consumption, and efficiency, along with consolidated factory-wide production reports and department-level performance summaries." },
       { title: "Automatic reports", text: "Receive automatically generated daily and monthly factory reports by email to stay informed about production performance, machine activity, and operational trends." },
       { title: "Historical trends & performance analysis", text: "Review historical production and electrical data over selected periods to understand operational trends, compare performance, and support data-driven factory management." },
+    ],
+  },
+  {
+    title: "Factory Operations & Management",
+    icon: (
+      <>
+        <g fill="currentColor" stroke="none" opacity=".2" transform="translate(3 3)">
+          <path d="M12 3 22 8v12l-10 5L2 20V8z"/>
+        </g>
+        <path d="M12 3 22 8v12l-10 5L2 20V8zM2 8l10 5 10-5M12 13v12"/>
+        <circle cx="12" cy="8" r="2.5" fill="currentColor" stroke="none"/>
+      </>
+    ),
+    rows: [
+      {
+        title: "Shift management",
+        text: "Configure shift timings and assign supervisors to keep factory schedules organized and ensure clear responsibility across shifts."
+      },
+      {
+        title: "Automatic shift rotation",
+        text: "Set weekly or monthly supervisor rotations to maintain consistent shift assignments and simplify workforce scheduling."
+      },
+      {
+        title: "Department management",
+        text: "Organize factory departments and assign machines for structured operations and streamlined departmental monitoring."
+      },
+      {
+        title: "User access management",
+        text: "Manage user accounts, roles, permissions, and access restrictions to control access to factory information and platform features."
+      },
     ],
   },
 ];
