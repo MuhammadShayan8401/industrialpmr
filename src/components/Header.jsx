@@ -3,7 +3,7 @@ export default function Header({ menuOpen, setMenuOpen, openCall }) {
     <header className="header" id="top">
       <div className="header__inner">
         <a className="brand" href="#top" aria-label="industrialpmr home">
-          <img src="/assets/logo-full.png" alt="industrialpmr – Industrial Production Monitoring & Reporting" height="36" width="186" />
+          <img src="/assets/logo-full.svg" alt="industrialpmr – Industrial Production Monitoring & Reporting" height="36" width="186" />
         </a>
         <nav className="nav" aria-label="Primary">
           <a href="#features">Features</a>
