@@ -1,6 +1,6 @@
 # industrialpmr one-page site: Documentation
 
-React 19 + Vite 6 port of the original static site. Visual output is pixel-identical to the original at 1366px and 390px widths (checked with full-page screenshots).
+React 19 + Vite 6 single-page site for industrialpmr. The page is a single scrolling layout with a header, hero, feature list, call section, office address and map, and footer.
 
 ## 1. Quick start
 
