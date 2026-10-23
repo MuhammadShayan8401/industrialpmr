@@ -27,7 +27,7 @@ export default function Footer() {
 
           <div className="footer__powered">
             <h4>Powered by</h4>
-            <a href="https://www.industrialpmr.com" target="_blank" rel="noopener">KunjiSoft Technologies</a>
+            <a href="https://kunjisoft.com" target="_blank" rel="noopener">KunjiSoft Technologies</a>
             <a href="mailto:info@kunjisoft.com">info@kunjisoft.com</a>
           </div>
         </div>
