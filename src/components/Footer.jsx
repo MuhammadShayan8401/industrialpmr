@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <a className="flogo" href="#top" aria-label="industrialpmr home">
-              <img src="/assets/logo-full.png" alt="industrialpmr" width="186" height="36" />
+              <img src="/assets/logo-full.svg" alt="industrialpmr" width="186" height="36" />
             </a>
             <h2>Let's get your factory connected.</h2>
             <p>Industrial Production Monitoring &amp; Reporting, by KunjiSoft Technologies.</p>
