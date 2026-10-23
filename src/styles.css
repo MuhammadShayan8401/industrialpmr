@@ -1082,9 +1082,6 @@ p {
     margin-left: 0;
   }
 
-  .footer__grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Fixed mobile contact action */
@@ -1123,15 +1120,6 @@ p {
 
   .mobile-menu a {
     padding: 10px 0;
-  }
-
-  .footer__grid a {
-    padding: 11px 0;
-  }
-
-  .contact a {
-    display: inline-block;
-    padding: 7px 0;
   }
 
   .call__foot .btn {
