@@ -14,8 +14,8 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const revealElements = document.querySelectorAll(
-  '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *'
-  );
+  '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *, .footer__bottom > *'
+);
 
     revealElements.forEach((element, index) => {
       element.classList.add('reveal');
