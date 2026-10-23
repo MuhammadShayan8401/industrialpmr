@@ -37,7 +37,7 @@ src/
     Features.jsx            Renders feature groups from data
     Call.jsx                Phone number call-to-action
     Address.jsx             Office address + embedded Google map
-    Footer.jsx              Full logo, contact details, links, legal line
+    Footer.jsx              Full logo, Support / Legal / Powered by links, legal line
     CallModal.jsx           <dialog> with the request form
   data/featureGroups.jsx    All Features text and group icons
   hooks/useLeadForm.js      Form state, validation, submit, auto-close
