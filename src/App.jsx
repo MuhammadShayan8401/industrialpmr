@@ -13,9 +13,10 @@ export default function App() {
   const modalRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-const revealElements = document.querySelectorAll(
-  '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *, .footer__bottom > *'
-);
+  useEffect(() => {
+    const revealElements = document.querySelectorAll(
+      '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *, .footer__bottom > *'
+    );
 
     revealElements.forEach((element, index) => {
       element.classList.add('reveal');
@@ -47,19 +48,30 @@ const revealElements = document.querySelectorAll(
 
   function openCall() {
     setMenuOpen(false);
+
     const modal = modalRef.current;
-    if (modal.showModal) modal.showModal();
-    else modal.setAttribute('open', '');
+
+    if (!modal) return;
+
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      modal.setAttribute('open', '');
+    }
   }
 
   return (
     <>
-      <a className="skip" href="#main">Skip to content</a>
+      <a className="skip" href="#main">
+        Skip to content
+      </a>
+
       <Header
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         openCall={openCall}
       />
+
       <main id="main">
         <Hero openCall={openCall} />
         <Band />
@@ -68,11 +80,16 @@ const revealElements = document.querySelectorAll(
         <Address />
         <Footer />
       </main>
+
       <div className="dock">
-        <button className="btn btn--accent" onClick={openCall}>
+        <button
+          className="btn btn--accent"
+          onClick={openCall}
+        >
           Request a call
         </button>
       </div>
+
       <CallModal ref={modalRef} />
     </>
   );
