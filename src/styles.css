@@ -1080,6 +1080,7 @@ p {
   .hero__shot img {
     width: 100%;
     margin-left: 0;
+    transform: none;
   }
 
 }
