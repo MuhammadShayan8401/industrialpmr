@@ -845,6 +845,11 @@ features__intro p,
   border-left: 1px solid var(--line-ink);
 }
 
+/* the only divider: between the brand block and Support */
+.footer__brand + * {
+  border-left: 1px solid var(--line-ink);
+}
+
 .footer__top > :first-child {
   padding-left: 0;
   border-left: 0;
