@@ -13,10 +13,9 @@ export default function App() {
   const modalRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const revealElements = document.querySelectorAll(
-      '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *, .footer__bottom > *'
-    );
+  const revealElements = document.querySelectorAll(
+  '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *'
+  );
 
     revealElements.forEach((element, index) => {
       element.classList.add('reveal');
