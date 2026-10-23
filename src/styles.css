@@ -455,41 +455,58 @@ p {
 }
 
 /* Ticker — lamps alternate running (filled) and stopped (outline) */
+
+
+/* Industrial capability ticker */
 .band {
   position: relative;
   z-index: 2;
   overflow: hidden;
-  white-space: nowrap;
   background: var(--accent);
   color: var(--ink);
+  border-bottom: 1px solid rgba(17, 28, 36, 0.18);
 }
 
 .band__track {
-  display: inline-flex;
-  align-items: center;
-  gap: clamp(28px, 4vw, 56px);
+  display: flex;
   width: max-content;
-  padding: 16px 0 17px;
-  font-weight: 750;
-  font-stretch: 72%;
-  font-size: clamp(22px, 2.6vw, 34px);
-  line-height: 1;
-  animation: marquee 38s linear infinite;
+  animation: marquee 36s linear infinite;
   will-change: transform;
 }
 
-.band__track i {
-  display: inline-block;
-  flex: 0 0 14px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--ink);
-  border: 2px solid var(--ink);
+.band__group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: clamp(28px, 4vw, 56px);
+  padding: 19px 28px 20px 0;
 }
 
-.band__track i:nth-of-type(even) {
+.band__item {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: clamp(16px, 2vw, 26px);
+  font-size: clamp(20px, 2.4vw, 32px);
+  font-weight: 750;
+  font-stretch: 72%;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.band__lamp {
+  display: inline-block;
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
   background: transparent;
+}
+
+.band__lamp--on {
+  background: var(--ink);
 }
 
 .band:hover .band__track {
@@ -503,17 +520,31 @@ p {
 }
 
 @media (max-width: 640px) {
-  .band__track {
+  .band__group {
     gap: 22px;
-    padding: 13px 0 14px;
+    padding-top: 16px;
+    padding-bottom: 17px;
   }
 
-  .band__track i {
-    flex-basis: 10px;
-    width: 10px;
-    height: 10px;
+  .band__item {
+    gap: 14px;
+    font-size: 20px;
+  }
+
+  .band__lamp {
+    flex-basis: 9px;
+    width: 9px;
+    height: 9px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .band__track {
+    animation: none;
+    will-change: auto;
+  }
+}
+
 
 /* Features — a spec sheet: group on the left, its entries on the right */
 .features {
