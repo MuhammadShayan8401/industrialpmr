@@ -25,7 +25,7 @@ vercel.json                 Vercel headers and cleanUrls (unchanged from origina
 vite.config.js              Vite + Vitest config, /api dev proxy
 api/lead.js                 Vercel serverless function for call requests
 public/assets/              Static files served as-is at /assets/*
-  logo-full.png  logo-mark.svg  laptop.png  fonts/archivo-*.woff2
+  logo-full.svg  logo-mark.svg  laptop.png  fonts/archivo-*.woff2
 src/
   main.jsx                  React bootstrap, imports styles.css
   App.jsx                   Page layout; owns menu state and the open-dialog action
