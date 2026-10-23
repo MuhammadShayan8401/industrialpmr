@@ -164,18 +164,6 @@ p {
   border-color: var(--ink);
 }
 
-.header__actions .btn--ink {
-  background: var(--ink);
-  color: var(--white);
-  border-color: var(--ink);
-}
-
-.header__actions .btn--ink:hover {
-  background: var(--accent);
-  color: var(--ink);
-  border-color: var(--ink);
-}
-
 .btn--accent {
   background: var(--accent);
   color: var(--ink);
