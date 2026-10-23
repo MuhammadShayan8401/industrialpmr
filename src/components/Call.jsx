@@ -1,6 +1,6 @@
 export default function Call({ openCall }) {
   return (
-    <section className="call">
+    <section className="call" id="contact">
       <div className="wrap">
         <h2>Call us about your factory.</h2>
         <a className="call__num" href="tel:+922134320800">+92 21 34320800</a>
