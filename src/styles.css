@@ -842,12 +842,6 @@ features__intro p,
 
 .footer__top > * {
   padding-inline: clamp(20px, 3vw, 40px);
-  border-left: 1px solid var(--line-ink);
-}
-
-/* the only divider: between the brand block and Support */
-.footer__brand + * {
-  border-left: 1px solid var(--line-ink);
 }
 
 .footer__top > :first-child {
