@@ -10,7 +10,14 @@ export default function Header({ menuOpen, setMenuOpen, openCall }) {
           <a href="#contact">Contact</a>
         </nav>
         <div className="header__actions">
-          <a href="https://dash.industrialpmr.com/" className="btn btn--ink btn--sm">Dashboard</a>
+        <a
+            href="https://dash.industrialpmr.com/"
+            className="btn btn--ink btn--sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dashboard
+        </a>
         </div>
         <button
           className="burger"
