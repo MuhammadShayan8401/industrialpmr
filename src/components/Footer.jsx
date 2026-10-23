@@ -12,9 +12,7 @@ export default function Footer() {
             <p>Industrial Production Monitoring &amp; Reporting, by KunjiSoft Technologies.</p>
             <a className="status" href="https://status.industrialpmr.com/" target="_blank" rel="noopener">System status</a>
           </div>
-        </div>
 
-        <div className="footer__bottom">
           <div className="footer__links">
             <h4>Support</h4>
             <a href="https://industrialpmr.com/docs">Documentation</a>
