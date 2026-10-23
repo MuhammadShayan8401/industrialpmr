@@ -9,7 +9,7 @@ describe('images and logos', () => {
   it('every <img> on the page points at a file in public/', () => {
     const { container } = render(<App />);
     const srcs = [...container.querySelectorAll('img')].map((i) => i.getAttribute('src'));
-    expect(srcs).toEqual(['/assets/logo-full.png', '/assets/laptop.png', '/assets/logo-full.png']);
+    expect(srcs).toEqual(['/assets/logo-full.svg', '/assets/laptop.png', '/assets/logo-full.svg']);
     for (const s of srcs) expect(existsSync(publicFile(s)), s).toBe(true);
   });
 
