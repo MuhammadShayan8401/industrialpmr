@@ -401,6 +401,7 @@ p {
   .hero__grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 24px;
+    align-items: center;
   }
 
   .hero__copy {
@@ -409,12 +410,13 @@ p {
 
   .hero__shot {
     margin-right: calc(var(--gutter) * -0.5);
+    padding-bottom: 40px;
   }
 
   .hero__shot img {
     width: 100%;
     margin-left: 0;
-    transform: translateY(-24%);
+    transform: none; 
   }
 
   .hero h1 {
