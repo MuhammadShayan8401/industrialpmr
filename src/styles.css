@@ -425,6 +425,18 @@ p {
   }
 }
 
+/* Small desktops: keep the laptop inside the hero */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .hero__shot {
+    margin-right: 0;
+  }
+
+  .hero__shot img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .go {
   display: inline-flex;
   align-items: center;
