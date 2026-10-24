@@ -1,4 +1,4 @@
-export default function Hero({ openCall }) {
+export default function Hero() {
   return (
     <section className="hero">
       <svg
@@ -27,7 +27,7 @@ export default function Hero({ openCall }) {
             is doing, how much power it uses and what it produces, then shows it to you live, from
             anywhere.
           </p>
-          <button className="go" onClick={openCall}>
+          <a className="go" href="tel:+922134320900">
             <span className="go__icon" aria-hidden="true">
               <svg viewBox="0 0 50 50" width="50" height="50">
                 <path
@@ -38,8 +38,8 @@ export default function Hero({ openCall }) {
                 />
               </svg>
             </span>
-            <span className="go__label">Request a call</span>
-          </button>
+            <span className="go__label">Call now</span>
+          </a>
         </div>
         <figure className="hero__shot">
           <img
