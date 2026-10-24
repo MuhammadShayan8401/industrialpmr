@@ -309,14 +309,15 @@ p {
 .mobile-menu a {
   text-decoration: none;
   color: var(--ink);
-  font-weight: 700;
-  font-stretch: 78%;
-  font-size: 28px;
-  padding: 6px 0;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 .mobile-menu .btn {
   margin-top: 14px;
+  font: 650 15px/1 var(--font);
+  padding: 18px 28px
 }
 
 /* Hero — the dashboard rises out of the ticker */
