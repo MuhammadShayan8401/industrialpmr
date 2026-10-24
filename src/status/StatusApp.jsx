@@ -37,7 +37,7 @@ export default function StatusApp({ pathname = window.location.pathname }) {
               </a>
             ))}
           </nav>
-          <a className="st-top__cta" href="/#contact">
+          <a className="st-top__cta" href="mailto:support@industrialpmr.com">
             Get in touch
           </a>
         </div>
