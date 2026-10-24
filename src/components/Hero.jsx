@@ -23,9 +23,7 @@ export default function Hero() {
             Every shot.
           </h1>
           <p>
-            industrialpmr is an IIoT monitoring system for factories. It records what each machine
-            is doing, how much power it uses and what it produces, then shows it to you live, from
-            anywhere.
+            Complete factory visibility in real time: monitor machine status, power usage, and production metrics from anywhere.
           </p>
           <a className="go" href="tel:+922134320900">
             <span className="go__icon" aria-hidden="true">
