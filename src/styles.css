@@ -393,7 +393,7 @@ p {
   max-width: none;
   margin-left: -4%;
   filter: drop-shadow(0 24px 36px rgba(0, 0, 0, 0.5));
-  transform: translateY(-26%);
+  transform: translateY(-28%);
 }
 
 /* Prevent hero image overlapping text on laptop screens */
