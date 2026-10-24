@@ -1,4 +1,4 @@
-export default function Header({ menuOpen, setMenuOpen, openCall, base = '' }) {
+export default function Header({ menuOpen, setMenuOpen, base = '' }) {
   // `base` is '/' on the standalone pages so the anchors point back to the landing page.
   return (
     <header className="header" id="top">
@@ -48,15 +48,9 @@ export default function Header({ menuOpen, setMenuOpen, openCall, base = '' }) {
         {base && <a href="/">Home</a>}
         <a href={`${base}#features`}>Features</a>
         <a href={`${base}#contact`}>Contact</a>
-        {openCall ? (
-          <button className="btn btn--accent" onClick={openCall}>
-            Request a call
-          </button>
-        ) : (
-          <a className="btn btn--accent" href="/#contact">
-            Request a call
-          </a>
-        )}
+        <a className="btn btn--accent" href="tel:+922134320900">
+          Call now
+        </a>
       </div>
     </header>
   );
