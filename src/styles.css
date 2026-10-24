@@ -442,6 +442,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 18px;
+  text-decoration: none;
   background: none;
   border: 0;
   padding: 0;
