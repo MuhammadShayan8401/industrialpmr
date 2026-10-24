@@ -54,8 +54,8 @@ export default function App() {
         <Features />
         <Call />
         <Address />
-        <Footer />
       </main>
+      <Footer />
       <div className="dock">
         <a className="btn btn--accent" href="tel:+922134320900">
           Call now
