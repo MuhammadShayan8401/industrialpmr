@@ -42,31 +42,24 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
-  function openCall() {
-    setMenuOpen(false);
-    const modal = modalRef.current;
-    if (modal.showModal) modal.showModal();
-    else modal.setAttribute('open', '');
-  }
-
   return (
     <>
       <a className="skip" href="#main">
         Skip to content
       </a>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} openCall={openCall} />
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main id="main">
-        <Hero openCall={openCall} />
+        <Hero />
         <Band />
         <Features />
-        <Call openCall={openCall} />
+        <Call />
         <Address />
         <Footer />
       </main>
       <div className="dock">
-        <button className="btn btn--accent" onClick={openCall}>
-          Request a call
-        </button>
+        <a className="btn btn--accent" href="tel:+922134320900">
+          Call now
+        </a>
       </div>
       <CallModal ref={modalRef} />
     </>
