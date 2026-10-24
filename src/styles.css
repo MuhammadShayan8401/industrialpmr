@@ -300,6 +300,12 @@ p {
   display: none;
 }
 
+@media (min-width: 981px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu a {
   text-decoration: none;
   color: var(--ink);
