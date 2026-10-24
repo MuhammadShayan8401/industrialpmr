@@ -1153,6 +1153,10 @@ p {
   }
 
   .mobile-menu a {
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 20px;
     padding: 10px 0;
   }
 
