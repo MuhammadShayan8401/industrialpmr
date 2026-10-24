@@ -14,7 +14,7 @@ export default function App() {
 
   useEffect(() => {
     const revealElements = document.querySelectorAll(
-      '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map, .footer__top > *, .footer__bottom > *'
+      '.features__intro, .grp__t, .row, .call h2, .call__num, .call__foot, .address__info, .address__map'
     );
 
     revealElements.forEach((element, index) => {
