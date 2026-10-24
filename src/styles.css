@@ -416,7 +416,7 @@ p {
   .hero__shot img {
     width: 100%;
     margin-left: 0;
-    transform: translateY(-45%); 
+    transform: translateY(-30%); 
   }
 
   .hero h1 {
